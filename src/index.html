@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/output.css">
+</head>
+<body class="bg-Background relative">
+    <div class="size-80 absolute bottom-0 right-96 bg-Box rounded-2xl rotate-45"></div>
+    <div class="size-80 absolute top-0 left-96 bg-Box  rounded-2xl rotate-45"></div>
+    <!--일단 article의 가장큰 레이아웃으로 좌우 패딩40로 잡았다, 기준은 좌우 여백이 가장 적은 피그마 상 form을 기준으로함
+    > 기본 레이아웃 구조를 명확히하고 일괄된 디자인 유지하려고..-->
+    <article class="w-[455px] m-auto mt-20 bg-Form-Bg rounded-[32px] px-10 pt-11 pb-[54px]"> 
+        <!--article의 레이아웃을 유지하며 text를 중앙정렬할 수도 있지만 그러면 without이 안내려가서 넓이 지정해줘야됨 -<귀찮,
+         피그마와 똑같이 하기위해 
+        h1과p를 div로 묶어서 패딩을 줌-->
+        <div class="px-8">
+            <!--내용 추가 안된다는 판단하에 그냥 고정높이줌-->
+            <h1 class="text-4xl h-[47px] font-bold mb-1">Creat An Account</h1>
+            <p class="text-center text-[15px] mb-8">Create an account to enjoy all the services without any ads for free!</p>
+        </div>
+            <form action="">
+        <fieldset>
+            <!--r-only를 사용하며 접근성은 높이지만 시각적으로 안보이게함-->
+            <legend class="sr-only">개인 정보</legend>
+            <div class="mb-4">
+            <label for="e-mail"><input class=" border rounded-xl w-full py-4 pl-[22px]" type="email" placeholder="Email Address"></label>
+            </div>
+            <div class="mb-4">
+            <label for="password"><input class="border rounded-xl w-full py-4 pl-[22px]" type="text" placeholder="password"></label>
+            </div>
+        </fieldset>
+
+        <button class="text-white bg-green text-[22px] font-bold px-12 py-4 rounded-3xl mx-14 mb-3"  type="submit">Create Account</button>
+ <!--첨엔 div로 하려고 했으나 따로 div안하고 하나의 문장취급+마크업 간단 => 의미적 연관성 높게-->
+        <div>
+            <p class=" px-20 text-[12px]">Already Have An Account?
+            <a href="#">sign in</a>
+             </p>
+            </div>
+         </form>
+    </article>
+</body>
+</html>
