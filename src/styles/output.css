@@ -554,18 +554,6 @@ video {
   --tw-contain-style:  ;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .absolute {
   position: absolute;
 }
@@ -578,24 +566,16 @@ video {
   left: 0px;
 }
 
+.right-96 {
+  right: 24rem;
+}
+
 .top-0 {
   top: 0px;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.left-96 {
-  left: 24rem;
-}
-
-.right-96 {
-  right: 24rem;
+.z-10 {
+  z-index: 10;
 }
 
 .m-auto {
@@ -627,38 +607,36 @@ video {
   margin-top: 5rem;
 }
 
-.size-80 {
-  width: 20rem;
-  height: 20rem;
+.size-\[500px\] {
+  width: 500px;
+  height: 500px;
 }
 
 .h-\[47px\] {
   height: 47px;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-\[455px\] {
   width: 455px;
 }
 
-.w-full {
-  width: 100%;
+.-translate-y-36 {
+  --tw-translate-y: -9rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.w-80 {
-  width: 20rem;
+.translate-x-1\/2 {
+  --tw-translate-x: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-1\/2 {
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-45 {
   --tw-rotate: 45deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.-rotate-45 {
-  --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -670,39 +648,12 @@ video {
   border-radius: 1.5rem;
 }
 
+.rounded-\[160px\] {
+  border-radius: 160px;
+}
+
 .rounded-\[32px\] {
   border-radius: 32px;
-}
-
-.rounded {
-  border-radius: 0.25rem;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.rounded-2xl {
-  border-radius: 1rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
-.bg-green {
-  --tw-bg-opacity: 1;
-  background-color: rgb(132 199 174 / var(--tw-bg-opacity));
-}
-
-.bg-pink-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 207 232 / var(--tw-bg-opacity));
-}
-
-.bg-Form-Bg {
-  --tw-bg-opacity: 1;
-  background-color: rgb(246 251 249 / var(--tw-bg-opacity));
 }
 
 .bg-Background {
@@ -715,6 +666,16 @@ video {
   background-color: rgb(193 227 214 / var(--tw-bg-opacity));
 }
 
+.bg-Form-Bg {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 251 249 / var(--tw-bg-opacity));
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(132 199 174 / var(--tw-bg-opacity));
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -723,11 +684,6 @@ video {
 .px-12 {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.px-20 {
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 
 .px-8 {
@@ -740,29 +696,12 @@ video {
   padding-bottom: 1rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-}
-
-.pl-\[22px\] {
-  padding-left: 22px;
-}
-
-.pt-11 {
-  padding-top: 2.75rem;
-}
-
-.pb-14 {
-  padding-bottom: 3.5rem;
-}
-
 .pb-\[54px\] {
   padding-bottom: 54px;
 }
 
-.pt-20 {
-  padding-top: 5rem;
+.pt-11 {
+  padding-top: 2.75rem;
 }
 
 .text-center {
@@ -774,8 +713,8 @@ video {
   line-height: 2.5rem;
 }
 
-.text-\[14px\] {
-  font-size: 14px;
+.text-\[12px\] {
+  font-size: 12px;
 }
 
 .text-\[15px\] {
@@ -786,10 +725,6 @@ video {
   font-size: 22px;
 }
 
-.text-\[12px\] {
-  font-size: 12px;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -797,4 +732,11 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.inputCss{
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 12px;
+  padding: 16px 0px 16px 22px;
+  width:100%;
 }
