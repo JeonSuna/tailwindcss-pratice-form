@@ -28,14 +28,18 @@
         <!--현재는 피그마 기준 폼이 단순하기 때문에+ fieldset을 추가하지 않고 마크업 구조를 단순하게함-->
         <!--대신 legend가 사용되지 않으므로 접근성을 높이기 위해 form에 aria속성 사용-->
         <form action="#" aria-label="Form Account">
-               <div class="mb-4">
+               <div class=" relative mb-4">
                 <!--공통내용@layer로 처리-->
-                    <label class="" for="e-mail"><input class="inputCss" type="email"
-                            placeholder="Email Address" required><span class="sr-only">enter your email</span></label>
+                <!--input-type:email은 내장된 유효성 검사기능을 가지고 있기 때문에preer:invalid시에 유효성 검사 자동 판단 가능하다-->
+                   <label for="email" class="sr-only">Enter your email</label>
+                   <input  id="email" type="email" class="inputCss ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-green peer" placeholder="Email address">
+                   <!--required속성이 있으면 preer가 처음부터 invalid이기 때문에 opacity-0이 적용되지 않는다.-->
+                   <p class="absolute opacity-0 peer-invalid:opacity-100 transition delay-300 duration-500  ring-2 right-0 -top-7 bg-Box rounded-xl px-2">please provide a vaild email</p>
                 </div>
                 <div class="mb-4">
-                    <label for="password"><input class="inputCss" type="password"
-                            placeholder="password" required><span class="sr-only">enter your email</span></label>
+                    <label class="sr-only" for="password">Enter your password</label>
+                    <!--focus:outline-none으로 기본 적용되었던 focus를 제거해줌-->
+                    <input class="inputCss ring-2 ring-gray-300 focus:outline-none focus:ring-2 focus:ring-green" type="password" name="" id="password" placeholder="Password">
                 </div>
             <button class="text-white bg-green text-[22px] font-bold px-12 py-4 rounded-3xl mx-14 mb-3"
                 type="submit">Create Account</button>
